@@ -4,7 +4,7 @@ Management System in Python using MySQL Database,HTML and CSS
 ## Functionalities  
            - add books
            - delete/update books
-           - search books
+           - view book
            - issue book
            - return book
           
