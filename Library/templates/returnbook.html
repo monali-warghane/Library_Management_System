@@ -1,0 +1,30 @@
+{% include 'header.html' %}
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Return Book</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+   </head>
+<body style="background-color:wheat;">
+  <div class="container" style="max-width:500px;">
+    <div class="px-4 py-4 pt-md-6 pb-md-7 ml-auto text-center">
+    <h2 class="text-center">Return Books</h2>
+        <hr/>
+    </div>
+    <div class="py-6">
+        <div class="col">
+            <div class="col-12">
+                <form method="post">
+                    {% csrf_token %}
+                     {{form.as_p}}
+                    <button type="submit" class="btn-center btn-secondary">Return Book</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
