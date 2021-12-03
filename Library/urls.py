@@ -29,4 +29,5 @@ urlpatterns = [
     path('deletebook/<str:pk>', deletebook.as_view()),
     path('registeradmin', registeradmin),
     path('loginpage', loginpage),
+    path('delete/<str:pk>', deletebook.as_view()),
 ]

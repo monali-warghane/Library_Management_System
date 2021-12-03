@@ -89,6 +89,8 @@ def loginpage(request):
 
 class deletebook(DeleteView):
     template_name = 'delete.html'
+    model = AddBooks
+    success_url = '/'
 
 
 

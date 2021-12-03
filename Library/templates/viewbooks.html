@@ -18,6 +18,8 @@
     <th class="text-center">Category</th>
      <th class="text-center">Book Id</th>
     <th class="text-center">Update</th>
+    <th class="text-center">Delete</th>
+
 {% for i in viewbooks %}
 
 <tr>
@@ -27,6 +29,7 @@
     <td class="text-center">{{i.category}}</td>
     <td class="text-center">{{i.book_id}}</td>
     <td class="text-center"><a type="button" href="updatebook/{{i.pk}}">Update</a></td>
+    <td class="text-center"><a type="button" href="delete/{{i.pk}}">Delete</a></td>
 <!--    <td class="text-center"><a type="button" href="detail/{{i.pk}}">Detail</a></td>-->
     </tr>
 {% endfor %}
